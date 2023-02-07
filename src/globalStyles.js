@@ -39,7 +39,16 @@ export const Heading = styled.h2`
   text-align: center;
   width: ${({ width }) => (width ? width : "100%")};
 `;
-export const TextWrapper = styled.span``;
+export const TextWrapper = styled.span`
+  color: ${({ color }) => (color ? color : "")};
+  font-size: ${({ size }) => (size ? size : "")};
+  font-weight: ${({ weight }) => (weight ? weight : "")};
+  letter-spacing: ${({ spacing }) => (spacing ? spacing : "")};
+  padding: ${({ padding }) => (padding ? padding : "")};
+  margin: ${({ margin }) => (margin ? margin : "")};
+  margin-bottom: ${({ mb }) => (mb ? mb : "")};
+  margin-top: ${({ mt }) => (mt ? mt : "")};
+`;
 export const Section = styled.section``;
 export const Row = styled.div``;
 export const Column = styled.div``;
