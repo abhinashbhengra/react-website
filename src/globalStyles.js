@@ -49,7 +49,22 @@ export const TextWrapper = styled.span`
   margin-bottom: ${({ mb }) => (mb ? mb : "")};
   margin-top: ${({ mt }) => (mt ? mt : "")};
 `;
-export const Section = styled.section``;
+export const Section = styled.section`
+  padding: ${({ padding }) => (padding ? padding : "140px 0")};
+  margin: ${(margin) => (margin ? margin : "")};
+  background: ${({ inverse }) => (inverse ? "white" : "#071c2f")};
+  position: ${({ position }) => (position ? position : "")};
+  width: ${({ width }) => (width ? width : "auto")};
+  min-width: ${({ minWidth }) => (minWidth ? minWidth : "auto")};
+  max-width: ${({ maxWidth }) => (maxWidth ? maxWidth : "auto")};
+  height: ${({ height }) => (height ? height : "auto")};
+  max-height: ${({ maxHeight }) => (maxHeight ? maxHeight : "auto")};
+  min-height: ${({ minHeight }) => (minHeight ? minHeight : "auto")};
+
+  @media screen and (max-width: 768px) {
+    padding: ${({ smPadding }) => (smPadding ? smPadding : "70px 0")};
+  }
+`;
 export const Row = styled.div``;
 export const Column = styled.div``;
 export const Button = styled.button``;
