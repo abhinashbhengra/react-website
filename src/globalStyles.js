@@ -81,5 +81,20 @@ export const Row = styled.div`
   min-height: ${({ minHeight }) => (minHeight ? minHeight : "auto")};
   flex-wrap: ${({ wrap }) => (wrap ? wrap : "")};
 `;
-export const Column = styled.div``;
+export const Column = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: ${({ justify }) => (justify ? justify : "")};
+  align-items: ${({ align }) => (align ? align : "")};
+  gap: ${({ gap }) => (gap ? gap : "")};
+  padding: ${({ padding }) => (padding ? padding : "")};
+  margin: ${({ margin }) => (margin ? margin : "")};
+  position: ${({ position }) => (position ? position : "")};
+  width: ${({ width }) => (width ? width : "")};
+  min-width: ${({ minWidth }) => (minWidth ? minWidth : "")};
+  max-width: ${({ maxWidth }) => (maxWidth ? maxWidth : "")};
+  height: ${(height) => (height ? height : "")};
+  max-height: ${({ maxHeight }) => (maxHeight ? maxHeight : "")};
+  min-height: ${({ minHeight }) => (minHeight ? minHeight : "")};
+`;
 export const Button = styled.button``;
