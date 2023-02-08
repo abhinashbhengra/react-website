@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
 
 export const Container = styled.div`
   width: 100%;
-  max-width: 1300px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 50px;
@@ -131,3 +131,5 @@ export const Button = styled.button`
     color: black;
   }
 `;
+
+export default GlobalStyle;
