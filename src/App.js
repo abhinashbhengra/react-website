@@ -8,15 +8,14 @@ import Pricing from "./pages/PricingPage";
 import Signup from "./pages/SignupPage";
 function App() {
   return (
-    <Router>
-      <GlobalStyle />
+    <>
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/signup" element={<Signup />} />
         <Route exact path="/pricing" element={<Pricing />} />
       </Routes>
-    </Router>
+    </>
   );
 }
 
