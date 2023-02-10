@@ -33,7 +33,7 @@ function Navbar() {
     if (id && location.pathname === "/") {
       scrollTo(id);
     }
-    history.push(to);
+    history(to);
     setShow(false);
   };
 
